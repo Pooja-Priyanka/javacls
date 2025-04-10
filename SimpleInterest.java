@@ -1,3 +1,5 @@
+/* write a java program on calculating simple interest. */
+
 import java.util.Scanner;
 
 class SimpleInterest {

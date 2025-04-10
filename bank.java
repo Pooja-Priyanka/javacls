@@ -1,3 +1,6 @@
+/* create a class named back account with methods deposit and withdraw where the deposit method should accepts a parameter and when this method is called the deposited amount should be added to the current balance in addition to that when a with draw method is called it has to verify whether the withdraw amount is less-than the current balance if not displaying a message saying that there are insufficient funds. 
+use the constructor to display the details of the costumer (name,account number, IFSC,branch) atleast 2 costumers as objects c1, c2. */
+
 public class bank {
     // Attributes
     String name;

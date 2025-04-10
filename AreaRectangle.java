@@ -1,3 +1,4 @@
+/* write a java program for area of rectangle. */
 
 import java.util.Scanner;
 

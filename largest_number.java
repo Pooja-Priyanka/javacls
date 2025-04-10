@@ -1,3 +1,5 @@
+/* write a java program on largest of 3 numbers using ternary operators. */
+
 import java.util.Scanner;
 class largest_number{
 public static void main(String[] args){

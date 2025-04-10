@@ -1,3 +1,11 @@
+/* 1)write a java program with following instructions:
+i.	Create a class with name car.
+ii.	Create 4 attributes named(colour,brand,fueltype,mileage).
+iii.	Create 3 methods named(start,stop,service).
+iv.	Create 3 objects named c1,c2,c3.
+v.	Create a constructor with parameters colours,brand,fueltype,mileage.
+ */
+
 public class car1 {
     // Attributes
     String color;
@@ -6,7 +14,7 @@ public class car1 {
     float mileage;
 
     // Constructor with parameters
-    car1(String color, String brand, String fuelType, float mileage) {
+    public car1(String color, String brand, String fuelType, float mileage) {
         this.color = color;
         this.brand = brand;
         this.fuelType = fuelType;
@@ -14,7 +22,7 @@ public class car1 {
     }
 
     // Declaring methods
-    public void car1() {
+    public void car() {
         System.out.println("Welcome to the store!");
     }
 
@@ -30,38 +38,26 @@ public class car1 {
         System.out.println("The car is serviced");
     }
 
-public void displayDetails(){
-    System.out.println("Color: " + color);
-    System.out.println("Brand: " + brand);
-    System.out.println("Fuel Type: " + fuelType);
-    System.out.println("Mileage: " + mileage);
-}
+    public void displayDetails() {
+        System.out.println("Color: " + color);
+        System.out.println("Brand: " + brand);
+        System.out.println("Fuel Type: " + fuelType);
+        System.out.println("Mileage: " + mileage);
+    }
 
     // Main method
     public static void main(String[] args) {
-        // Using the default constructor
-        car1 c1 = new car1();
-        c1.color = "Red";
-        c1.brand = "Kia";
-        c1.fuelType = "Diesel";
-        c1.mileage = 24;
+        // Using the parameterized constructor
+        car1 c1 = new car1("Red", "Kia", "Diesel", 24);
+        car1 c2 = new car1("Black", "Hyundai", "Diesel", 20);
+        car1 c3 = new car1("Grey", "BMW", "Diesel", 30);
 
-	car1 c2 = new car1();
-        c2.color = "black";
-        c2.brand = "hyundai";
-        c2.fuelType = "Diesel";
-        c2.mileage = 20;
-
-	car1 c3 = new car1();
-        c3.color = "grey";
-        c3.brand = "BMW";
-        c3.fuelType = "Diesel";
-        c3.mileage = 30;
-
-        c1.car1();
+        // Calling methods on c1
+        c1.car();
         c1.start();
         c1.stop();
         c1.service();
+        
         c1.displayDetails();
         c2.displayDetails();
         c3.displayDetails();

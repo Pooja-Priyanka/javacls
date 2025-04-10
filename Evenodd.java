@@ -1,3 +1,4 @@
+/*checking a number weather it is even or odd. */
 import java.util.Scanner;
 
 class Evenodd{
@@ -15,6 +16,5 @@ class Evenodd{
         } else {
             System.out.println(number + " is odd");
         }
-
     }
 }
